@@ -1,0 +1,104 @@
+[
+  {
+    "id": "vopk",
+    "title": "VOPK",
+    "subtitle": "The Unified Package Manager",
+    "icon": "Package",
+    "link": "https://github.com/omar9devx/vopk",
+    "description": "VOPK is a unified frontend for package management that standardizes software installation across Linux distributions and other platforms, providing a clean, intelligent CLI.",
+    "problem": "Linux ecosystem has many package managers (apt, pacman, dnf, etc.) and languages/tools (npm, pip, cargo), making installation inconsistent and error-prone.",
+    "solution": "A single CLI wrapper that auto-detects environment, translates commands to the native manager, supports plugins, AI suggestions, rollbacks, and works across systems and languages.",
+    "codeSnippet": "$ vopk install neovim\n# Automatically detects platform and runs the correct native command",
+    "tags": ["Bash", "Cross-Platform", "CLI", "DevOps Tooling", "AI-Powered"],
+    "features": [
+      {
+        "icon": "Terminal",
+        "title": "Universal Compatibility",
+        "desc": "Supports 50+ package managers across Linux, Unix-like, container, and language-specific ecosystems"
+      },
+      {
+        "icon": "Zap",
+        "title": "AI-Powered Intelligence",
+        "desc": "Provides smart suggestions, conflict detection, and auto-fixes"
+      },
+      {
+        "icon": "Code2",
+        "title": "Plugin System",
+        "desc": "Extensible via scripts in ~/.config/vopk/plugins with hooks into core API"
+      },
+      {
+        "icon": "Shield",
+        "title": "Safe & Predictable",
+        "desc": "Dry-runs, snapshots, rollbacks, and developer-ready workflows"
+      }
+    ]
+  },
+  {
+    "id": "vmpkg",
+    "title": "VMPKG",
+    "subtitle": "Self-Contained Linux Package Manager",
+    "icon": "Package",
+    "link": "https://github.com/omar9devx/vmpkg",
+    "description": "VMPKG is a cross-distribution, fully self-contained user-space package manager for Linux. It manages its own registry, cache, manifests, and installation tree inside the user’s home directory, without depending on system package managers.",
+    "problem": "Linux users have to deal with multiple package managers, root privileges, and system-wide changes. Installing software consistently across distros is complex and error-prone.",
+    "solution": "A self-contained package manager that works in user-space, supports multiple Linux distributions, manages its own registry and packages, and provides predictable CLI behavior.",
+    "codeSnippet": "$ vmpkg install neovim\n# Installs neovim in user-space from archive\n$ vmpkg list\n# Shows installed packages",
+    "tags": ["Linux", "Bash", "CLI", "Package Management", "Cross-Platform"],
+    "features": [
+      {
+        "icon": "Terminal",
+        "title": "User-space Manager",
+        "desc": "No root required, everything installed under ~/.vmpkg"
+      },
+      {
+        "icon": "Server",
+        "title": "Multi-distro Support",
+        "desc": "Works on Debian, Ubuntu, Arch, Fedora, Alpine, Gentoo, WSL, and containers"
+      },
+      {
+        "icon": "Shield",
+        "title": "Predictable & Safe",
+        "desc": "Does not modify system packages, provides reliable CLI output"
+      },
+      {
+        "icon": "Zap",
+        "title": "Minimal Dependencies",
+        "desc": "Requires only Bash, curl/wget, tar, optionally unzip"
+      }
+    ]
+  },
+  {
+    "id": "maxybot",
+    "title": "MaxyBot",
+    "subtitle": "Modular Discord Bot",
+    "icon": "Code",
+    "link": "https://github.com/omar9devx/maxybot",
+    "description": "MaxyBot is a fully-featured Discord bot built with discord.py. It provides a modular cog-based structure with more than 24 cogs for moderation, economy, ticketing, auto responses, starboard, and secure encrypted data handling.",
+    "problem": "Managing a scalable, secure, and configurable Discord bot with multiple features for different guilds is challenging, especially with custom commands and per-guild configuration.",
+    "solution": "A modular, cog-based architecture that allows easy scaling, per-guild configuration, auto-saving, secure encryption, and owner-only command management.",
+    "codeSnippet": "python bot.py\n# Loads all cogs and starts background tasks",
+    "tags": ["Python", "Discord", "Bot", "Automation", "Modular"],
+    "features": [
+      {
+        "icon": "Code2",
+        "title": "Cog-based Modular Design",
+        "desc": "24+ cogs supporting commands, moderation, economy, auto-responses, starboard, and more"
+      },
+      {
+        "icon": "Zap",
+        "title": "Per-Guild Configuration",
+        "desc": "Automatic configuration saving with live updates per server"
+      },
+      {
+        "icon": "Terminal",
+        "title": "Command Management",
+        "desc": "Supports slash commands, prefix commands, cooldowns, and owner-only commands"
+      },
+      {
+        "icon": "Shield",
+        "title": "Secure & Scalable",
+        "desc": "AES-GCM encryption for sensitive data and scalable architecture for multiple guilds"
+      }
+    ]
+  }
+]
